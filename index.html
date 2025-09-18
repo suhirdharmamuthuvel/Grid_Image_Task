@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 10px;
+      padding: 10px;
+      width: 900px;
+      height: 700px;
+      border: 2px solid black;
+      margin: 0px auto;
+      padding: 10px;
+      grid-template-areas:
+        "grid1 grid2 grid3"
+        "grid1 grid5 grid3"
+        "grid4 grid5 grid6";
+    }
+    .grid1 {
+      background-image: url(grid1.jpg);
+      grid-area: grid1;
+      background-size: cover;
+    }
+    .grid2 {
+      background-image: url(grid2.png);
+      grid-area: grid2;
+      background-size: cover;
+    }
+    .grid3 {
+      background-image: url(grid3.jpg);
+      grid-area: grid3;
+      background-size: cover;
+    }
+    .grid4 {
+      background-image: url(grid4.jpg);
+      grid-area: grid4;
+      background-size: cover;
+    }
+    .grid5 {
+      background-image: url(grid5.jpg);
+      grid-area: grid5;
+      background-size: cover;
+    }
+    .grid6 {
+      background-image: url(grid6.png);
+      grid-area: grid6;
+      background-size: cover;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+    <div class="grid1"></div>
+    <div class="grid2"></div>
+    <div class="grid3"></div>
+    <div class="grid4"></div>
+    <div class="grid5"></div>
+    <div class="grid6"></div>
+    </div>
+  </body>
+</html>
